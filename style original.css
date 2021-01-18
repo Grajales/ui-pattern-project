@@ -1,0 +1,93 @@
+header {grid-area: header; }
+.first { grid-area: first;
+background-image: url('https://images-na.ssl-images-amazon.com/images/I/31GI3xz4GTL._AC_.jpg';
+}
+.second { grid-area: second; }
+.third { grid-area: third; }
+.fourth { grid-area: fourth; }
+.fifth { grid-area: fifth; }
+.sixth { grid-area: sixth; }
+.container {
+  display: grid;
+
+  grid-template-areas:
+  "header header header "
+  "first second third"
+  "fourth fifth sixth";
+}
+
+.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0px 30px 0px;
+  /*border: 6px solid aqua;*/
+}
+ 
+header { 
+  text-align: center;
+  background: lightgrey;
+  background-size: cover;
+  background-clip: padding-box;
+  /* background-size: 50px; */
+  color: darkblue; 
+  text-shadow: 2px 2px #d1e3f4;
+  font-size: 30px;
+ 
+}
+body{
+  background: rgba(112, 149, 151, 0.5);
+}
+
+ a {
+  font-size: 26px;
+  text-decoration: none;
+  }
+  .foot{
+    font-size:16px ;
+  }
+
+
+img {
+    margin: 15px 0px 0px 0px;
+}
+
+
+footer {   
+  text-align: left;
+  font-size:16px ;
+  margin: 5px;
+  padding: 15px;
+ }  
+
+  @media (max-width: 600px) {
+    header, aside, ul, article, footer {
+      margin: 0
+    }
+    .container {
+      grid-template-areas: 
+      "header"
+      "first "
+      "second"
+      "third"
+      "fourth"
+      "fifth"
+      "sixth";
+    }
+  }
+
+  input {
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+  }
+  input[type="submit"] {
+    background: blue;
+    color: white;
+  }
+ input[type="email"] {
+   background: lightgrey;
+  } 
+  hr { color: white;
+  height:  4px }
